@@ -15,3 +15,5 @@ RoxygenNote: 7.3.0
 Suggests: 
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
+URL: https://github.com/blingblingdong/Java7
+BugReports: https://github.com/blingblingdong/Java7/issues
