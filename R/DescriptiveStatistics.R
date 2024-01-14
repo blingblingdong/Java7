@@ -93,3 +93,17 @@ AN <- function(list_of_vector, name){
   return(an)
 }
 
+#' HY：宣告一個HypothesisTest物件
+#'
+#' 以DescriptiveStatistics物件作為參數，快速，整潔的使用java中的HY
+#'
+#' @param DS 傳入一個DescriptiveStatistics物件。
+#'
+#' @return 一個HypothesisTest物件。
+#' @examples
+#' HY(DS(c(1,2,3,4,5,6,7,8,9,10),"test"))
+HY <- function(DS){
+  # 宣告一個Hypothesis物件
+  hy <- .jnew("HypothesisTest",DS$getData(),DS$getName())
+  return(hy)
+}

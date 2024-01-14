@@ -4,4 +4,4 @@ export("LR")
 export("LR_DS")
 export("LR_predict")
 export("AN")
-
+export("HY")
